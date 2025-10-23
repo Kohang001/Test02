@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RITTIYA_SHOP</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="shop2.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">RW SHOP</div>
+    <nav>
+      <a href="/school-shop-frontend/index.html">หน้าแรก</a>
+      <a href="/school-shop-frontend/contact.html">ติดต่อเรา</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>เลือกหน้าที่คุณต้องการ</h1>
+    <p>โปรดใส่ชื่อให้ตรงกับชื่อบัญชีหากมีข้อผิดพลาดที่ไม่ได้เกิดจากระบบจะไม่ทำการคืนเงินทั้งสิน</p>
+  </section>
+
+  <!-- ข้อมูลลูกค้า -->
+  <form id="orderForm" class="customer-info">
+    <label for="customerName">ชื่อลูกค้า:</label>
+    <input type="text" id="customerName" name="customerName" placeholder="เช่น นายดี ทองดำ(ไก่)" required>
+
+    <label for="customerRoom">ห้องที่ให้ไปส่ง:</label>
+    <input type="number" id="customerRoom" name="customerRoom" placeholder="เช่น 111" required>
+
+    <label for="customerContact">เบอร์ติดต่อ:</label>
+    <input type="number" id="customerContact" name="customerContact" placeholder="เช่น 0123456789" required>
+  </form>
+
+  <!-- รายการสินค้า -->
+  <div id="product-list" class="product-list"></div>
+
+  <!-- สรุปยอด -->
+  <div class="order-summary">
+    <h2>💰 สรุปยอดรวม</h2>
+    <p>ราคารวมทั้งหมด: <span id="totalPrice">0.00</span> บาท</p>
+    <h2>ชื่อ test shop2</h2>
+    <h2>เลขบัญชี 0000000000</h2>
+
+    <!-- ปุ่มเดียว -->
+    <button id="confirmOrder">ยืนยันการสั่งซื้อและส่งสลิป</button>
+
+    <!-- อัปโหลดสลิป -->
+    <div class="upload-section">
+      <h3>📸 แนบสลิปการโอนเงิน</h3>
+      <label for="paymentSlip" class="upload-box">
+        <span>กดเพื่อเลือกไฟล์ หรือ ลากรูปมาวางที่นี่</span>
+        <input type="file" id="paymentSlip" name="slip" accept="image/*" hidden>
+      </label>
+      <div class="preview" id="preview"></div>
+    </div>
+  </div>
+
+  <footer>By Nuttawat Sumploy Dev</footer>
+  <script src="shop2.js"></script>
+</body>
+
+</html>

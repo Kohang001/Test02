@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+}
+
+/* 🟦 ฟ้าเหลืองเป็นพื้นหลังทั้งหน้า */
+body {
+  background: linear-gradient(135deg, #007BFF, #FFD700);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+/* 🔹 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgba(0, 0, 0, 0.15);
+  /* โปร่งใสหน่อยให้เห็นพื้นหลัง */
+  color: #ffffff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+  color: #FFD700;
+}
+
+/* 🌈 Hero Section */
+.hero {
+  text-align: center;
+  color: white;
+  padding: 80px 20px 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* 🏪 Grid ร้านค้า */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 50px;
+}
+
+/* 🧊 การ์ดร้านค้า */
+.shop-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.shop-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.shop-card h3 {
+  color: #007BFF;
+  font-size: 1.2rem;
+}
+
+.shop-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: hsla(0, 0%, 0%, 0.15);
+  color: white;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shop-grid {
+    padding: 20px;
+  }
+}

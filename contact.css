@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+}
+
+/* 🟦 ทั้งหน้าเป็นพื้นหลังไล่สีฟ้าเหลือง */
+body {
+  background: linear-gradient(135deg, #007BFF, #FFD700);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgba(0, 0, 0, 0.15);
+  /* โปร่งใสหน่อยให้เห็นพื้นหลัง */
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+  color: #FFD700;
+}
+
+/* Hero Section */
+.contact-hero {
+  text-align: center;
+  color: white;
+  padding: 80px 20px 40px;
+}
+
+.contact-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* 🧊 Contact Grid — ลอยบนพื้นหลัง */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 50px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.9);
+  /* โปร่งใสเล็กน้อยให้เห็นสีพื้นหลัง */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 40px 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card i {
+  font-size: 2.5rem;
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+.contact-card LINE .contact-card h3 {
+  color: #007BFF;
+  margin-bottom: 8px;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact-card a:hover {
+  color: #007BFF;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.15);
+  color: white;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    padding: 20px;
+  }
+}
+
+/* 🧊 Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 50px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 40px 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎨 ทำให้ Icon แต่ละอันมีสีเฉพาะ */
+.contact-card i {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+/* Instagram */
+.contact-card:nth-child(1) i {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Line */
+.contact-card:nth-child(2) i {
+  color: #06C755;
+}
+
+/* Facebook */
+.contact-card:nth-child(3) i {
+  color: #1877F2;
+}
+
+/* โทรศัพท์ */
+.contact-card:nth-child(4) i {
+  color: #06C755;
+}
+
+/* ชื่อช่องทาง */
+.contact-card h3 {
+  color: #007BFF;
+  margin-bottom: 8px;
+}
+
+/* ลิงก์ */
+.contact-card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact-card a:hover {
+  color: #007BFF;
+}
