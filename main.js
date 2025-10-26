@@ -1,7 +1,7 @@
 const works = [
   {
-    name: "ข้าวปั้นญี่ปุ่น Handmade",
-    desc: "By Pitchayut 5/7",
+    name: "Drive Wang Jai",
+    desc: "แอปของรถโดยสารไร้คนขับ",
     image: "https://chillchilljapan.com/wp-content/uploads/2020/10/shutterstock_1110742883-650x513.jpg.webp",
     link: "shop1/shop1.html"
   }
@@ -25,3 +25,4 @@ works.forEach(work => {
 
   workGrid.appendChild(card);
 });
+
