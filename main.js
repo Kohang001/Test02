@@ -1,5 +1,5 @@
 // 🛍️ รายชื่อร้านค้า
-const shops = [
+const work = [
   {
     name: "ข้าวปั้นญี่ปุ่น Handmade",
     desc: "By Pitchayut 5/7",
@@ -22,21 +22,22 @@ const shops = [
 ];
 
 // 🎨 แสดงร้านค้า
-const shopGrid = document.getElementById("shopGrid");
+const workGrid = document.getElementById("workGrid");
 
-shops.forEach(shop => {
+works.forEach(work => {
   const card = document.createElement("div");
-  card.classList.add("shop-card");
+  card.classList.add("work-card");
 
   card.innerHTML = `
-    <img src="${shop.image}" alt="${shop.name}">
-    <h3>${shop.name}</h3>
-    <p>${shop.desc}</p>
+    <img src="${work.image}" alt="${work.name}">
+    <h3>${work.name}</h3>
+    <p>${work.desc}</p>
   `;
 
   card.addEventListener("click", () => {
-    window.location.href = shop.link;
+    window.location.href = work.link;
   });
 
-  shopGrid.appendChild(card);
+  workGrid.appendChild(card);
 });
+
