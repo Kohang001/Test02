@@ -1,5 +1,4 @@
-// 🛍️ รายชื่อร้านค้า
-const work = [
+const works = [
   {
     name: "ข้าวปั้นญี่ปุ่น Handmade",
     desc: "By Pitchayut 5/7",
@@ -8,7 +7,6 @@ const work = [
   }
 ];
 
-// 🎨 แสดงร้านค้า
 const workGrid = document.getElementById("workGrid");
 
 works.forEach(work => {
@@ -27,5 +25,3 @@ works.forEach(work => {
 
   workGrid.appendChild(card);
 });
-
-
